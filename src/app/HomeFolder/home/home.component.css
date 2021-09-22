@@ -1,0 +1,78 @@
+.row.barre
+{
+    color: rgb(255, 255, 255);
+     border: 2px solid rgb(153, 115, 115);
+ 
+   padding: 0px;
+     background-color: rgb(153, 115, 115);
+}
+.utilisateur
+{
+    font-size: 20px !important; 
+   
+}
+.title
+{
+text-align: center;
+margin-top: 20px;
+}
+.image
+{
+ 
+
+   background-image: url("../../../assets/img/img41.jpg");
+ background-size: 100% 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+   flex: 1 0 auto;
+   display: flex;
+   flex-direction: column;
+   border: 1px solid rgba(0,0,0,.125);
+   padding: 1.25rem;
+   overflow-x: auto;
+   overflow-y: visible;
+
+   overflow: auto;
+   
+  
+  
+}
+.cadre1
+{
+  margin-top: 170px;
+    position: absolute;
+    border: 1px solid #00367c;
+    background-color: #03387c94;
+    width: 562px;
+    height: 131px;
+    left: 54px;
+    padding: 21px;
+    margin-right: 56px;
+    
+}
+
+.cadre
+{
+  margin-top: -25px;
+  position: absolute;
+  border: 1px solid #03387c4f;
+  background-color: #03387c3b;
+  width: 1158px;
+  height: 350px;
+  right: -1px;
+  padding: 0px;
+  margin-right: 56px;
+}
+.cadre1 .enet1
+{
+  text-shadow: rgb(168 66 7) 2px 1px 1px;
+    font-size: 31px;
+    margin-bottom: 6px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+
+}
+.cadre1 .enet2
+{
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,111 @@
+<router-outlet></router-outlet>
+
+
+
+<div class="br-mainpanel">
+
+
+
+
+  <div class="br-pagebody">
+
+    <div class="br-section-wrapper">
+      <div class="collapsed-menu">
+        <div class="image" id="br-section-wrapper">
+
+          <pre>
+
+
+
+
+
+
+
+
+
+
+
+                 </pre>
+          <div class="cadre" id="br-section-wrapper">
+
+          </div>
+          <div class="cadre1" id="br-section-wrapper">
+            <p class="enet1">ENET'Com</p>
+            <P class="enet2">Ecole Nationale d'Electronique et des Télécommunications de Sfax </P>
+          </div>
+        </div>
+      </div>
+      <pre>
+
+</pre>
+      <div class="table-wrapper" id="br-pagebody">
+
+
+
+        <table id="datatable1" class="table display responsive nowrap">
+          <thead>
+            <tr>
+
+              <th colspan="6">TPs</th>
+              <th></th>
+
+
+
+
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr *ngFor="let tp of listTp ">
+
+              <td colspan="6"> <a href=""> {{tp?.travauxPratique.nom}}</a></td>
+
+              <td>
+
+                <div class="row">
+
+                  <div class="col-md-3">
+                    <i class="fa fa-file-text" style=" font-size: 22px; color: #ce760a;"> </i>
+
+                    <a [routerLink]="[routerLinkVariable,dynamicParameter]" (click)="checkTime(tp)">consulter</a>
+                  </div>
+                  <div class="col-md-3">
+                    <i class="fa fa-download" style="font-size: 22px; color: #ce760a;"> </i>
+                    <a [routerLink]="[routerLinkVariable,dynamicParameter]" (click)="gotoUpload(tp)"> deposer</a>
+                  </div>
+                  <div class="col-md-3">
+                    <i class="fa fa-calendar" style="
+                          font-size: 22px;
+                          
+                          color: #ce760a;"></i>
+                    <a [routerLink]="[routerLinkVariable,dynamicParameter]" (click)="reserverIDTP(tp)"> reserver
+                    </a>
+                  </div>
+                </div>
+              </td>
+
+
+
+
+            </tr>
+
+
+
+
+
+          </tbody>
+        </table>
+      </div><!-- table-wrapper -->
+
+
+
+    </div><!-- br-section-wrapper -->
+  </div><!-- br-pagebody -->
+
+  <script src="../../assets/lib/datatables/jquery.dataTables.js"></script>
+  <script src="../../assets/lib/datatables-responsive/dataTables.responsive.js"></script>
+</div><!-- br-mainpanel -->
+
+<script>
+  $('#datatable1').DataTable({});
+</script>
